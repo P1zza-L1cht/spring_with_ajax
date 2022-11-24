@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Black Jack online</title>
+	<meta name="description" content="BlackJackのゲームのデモサイトです。非同期通信の練習で作成しました。">
+	<meta name="author" content="yui">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/testForm.js}"></script>
+</head>
+<body>
+	<form>
+		<input type="text" name="name">
+		<input type="number" name="age">
+		<select name="gender">
+			<option value="">--性別を選択してください--</option>
+			<option value="男">男性</option>
+			<option value="女">女性</option>
+			<option value="その他">その他</option>
+		</select>
+		<input type="button" id="submit" value="送信">
+	</form>
+	<h2 id="content_name"></h2>
+	<h2 id="content_age"></h2>
+	<h2 id="content_gender"></h2>
+	
+	<!-- <div style="padding: 10px; background-color: skyblue; width: 250px;">
+		<a href="/content">内容の確認</a>
+	</div> -->
+</body>
+</html>

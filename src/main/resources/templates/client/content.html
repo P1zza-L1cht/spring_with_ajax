@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Black Jack online</title>
+	<meta name="description" content="BlackJackのゲームのデモサイトです。非同期通信の練習で作成しました。">
+	<meta name="author" content="yui">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script type="text/javascript" th:src="@{/js/testForm.js}"></script>
+</head>
+<body>
+	<h2 th:text="${name}">名前</h2>
+	<h2 th:text="${age}">年齢</h2>
+	<h2 th:text="${gender}">性別</h2>
+</body>
+</html>
